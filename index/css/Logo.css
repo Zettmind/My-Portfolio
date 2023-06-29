@@ -1,0 +1,128 @@
+/*---------All---------*/
+body {
+    margin: 0;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+
+body {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*---------The Logo---------*/
+.info p{
+    text-align: center;
+    font-size: 40px;
+}
+svg {
+    width: 1em;
+    margin: 2em auto;
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.content {
+    color: white;
+    text-align: center;
+}
+
+    .content h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+        font-weight: normal;
+
+    }
+
+    .content p {
+        font-size: 1.3rem;
+    }
+
+    .content .text-reveal {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all 1.5s;
+        transform: translateY(-3em);
+    }
+
+.locations-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+   
+    bottom: 0;
+    
+}
+
+    .locations-container .info {
+        background-color: lightgrey;
+        padding: 3em;
+        position: relative;
+        margin-top: -0.5em;
+    }
+
+.local {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: 0;
+    transform: translateY(2em);
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 42em;
+    object-fit: cover;
+    object-position: center;
+}

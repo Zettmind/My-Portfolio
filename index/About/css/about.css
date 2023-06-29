@@ -1,0 +1,330 @@
+/*---------About---------*/
+body {
+  margin: 0;
+  font-family: "Playfair Display";
+  height: 100vh;
+  background: black;
+  overflow: hidden;
+}
+
+body {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.bg-video {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bg-Code img {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bg img {
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+svg {
+  width: 1em;
+  margin: 2em auto;
+  display: block;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.content {
+  color: white;
+  text-align: center;
+}
+.content h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+.content p {
+  font-size: 1.3rem;
+}
+.content .text-reveal {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 1.5s;
+  transform: translateY(-3em);
+}
+
+.locations-container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+.locations-container .info {
+  background: white;
+  padding: 4em;
+  position: relative;
+}
+.locations-container .info .title {
+  font-size: 2rem;
+  color: white;
+  margin-top: -5.5em;
+  margin-bottom: 2.5em;
+  font-weight: bold;
+}
+.locations-container .info .title span {
+  display: block;
+}
+.locations-container .info .title p {
+  color: black;
+  font-size: 30px;
+}
+.local_p {
+    font-size: 30px;
+}
+
+.local {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  opacity: 0;
+  transform: translateY(2em);
+}
+
+.local img {
+    opacity: 0.6;
+   width: 100%;
+   height: 15em;
+   object-fit: cover;
+   transition: 0.4s ease-in-out;
+}
+
+.local img:hover {
+    opacity: 1.0;
+    width: 110%;
+}
+
+/*-----Chalestenics_MMA-----*/
+.Sports {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+    .Sports .MMA {
+        position: relative;
+        padding-left: 3em;
+        padding-right: 2em;
+    }
+
+    .Sports .Chalestenics {
+        position: relative;
+        padding-right: 3em;
+        padding-left: 2em;
+    }
+
+    .Sports img {
+        opacity: 0.6;
+        width: 100%;
+        height: 42em;
+        object-fit: cover;
+        border: 3px solid dimgrey;
+        transition: 0.3s ease-in-out;
+    }
+
+    .Sports img:hover {
+        opacity: 1.0
+    }
+
+    .Sports h2 {
+        bottom: -20px;
+        text-decoration-line: underline;
+        text-decoration-color: black;
+        position: relative;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Times New Roman';
+    }
+
+    .Sports p {
+        padding: 4px;
+        background-color: white;
+        font-size: 21px;
+        border: 3px solid black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+.Sports-header h1 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    text-decoration-line: underline;
+    text-decoration-color: Black;
+}
+
+/*-----------Code-----------*/
+.Dev {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.Dev .Web {
+    position: relative;
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+.Dev .Software {
+    position: relative;
+    padding-right: 3em;
+    padding-left: 2em;
+}
+
+.Dev img {
+    opacity: 0.5;
+    width: 100%;
+    height: 42em;
+    object-fit: cover;
+    border: 3px solid dimgrey;
+    transition: 0.3s ease-in-out;
+}
+
+.Dev img:hover {
+    opacity: 1.0;
+}
+
+.Dev h2 {
+    bottom: -20px;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    position: relative;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Times New Roman';
+}
+
+.Dev p {
+    padding: 4px;
+    background-color: white;
+    font-size: 21px;
+    border: 3px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Code-header h1{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    text-decoration-line: underline;
+    text-decoration-color: Black;
+
+}
+
+/*---------Socials----------*/
+header h1 {
+    position: relative;
+    top: 80px;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+}
+
+.Socials {
+    display: flex;
+    position: absolute;
+}
+
+
+.Socials h2 {
+    position: relative;
+    font-size: 30px;
+    left: 40px;
+    color: white;
+}
+
+    .Socials img {
+        opacity: 0.6;
+        width: 70%;
+        transition: 0.3s ease-in-out;
+    }
+
+.Socials img:hover {
+    opacity: 1.0;
+}
+
+.Content-Socials {
+    position: relative;
+    margin-left: 300px;
+}
+
+.Personal-Socials {
+    position: relative;
+    margin-left: 1000px;
+}
+
+.Content-Socials .YT {
+    margin-bottom: 100px    
+}
+
+.Personal-Socials .Instagram {
+    margin-bottom: 150px;
+}
+/*# sourceMappingURL=about.css.map */
